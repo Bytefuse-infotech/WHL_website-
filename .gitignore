@@ -26,3 +26,5 @@ update_logo_white.py
 update_logos.py
 update_navbar_logo.py
 update_starter.py
+
+.vercel

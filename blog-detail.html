@@ -1180,9 +1180,12 @@
         <a class="navbar-brand" href="index.html">
           <img src="assets/img/fullLogoWhite.png" alt="White Lotus International Hospital" style="height: 55px; width: auto; object-fit: contain;">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon d-block"></span>
-        </button>
+        <div class="d-flex align-items-center gap-2">
+          <a href="appointment.html" class="d-lg-none" style="background:var(--teal);color:#fff;width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1rem;box-shadow:0 4px 12px rgba(27,156,252,.25);"><i class="fas fa-calendar-alt"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon d-block"></span>
+          </button>
+        </div>
         <div class="collapse navbar-collapse" id="navbarMain">
           <ul class="navbar-nav mx-auto gap-1">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -1552,6 +1555,65 @@
     #wa-btn{bottom:78px;}
     #scrollTop{bottom:80px;}
   }
+
+/* --- ULTIMATE MOBILE RESPONSIVENESS PATCH --- */
+@media (max-width: 991px) {
+    #header { padding: 5px 0; }
+    .navbar-collapse { background: #fff; padding: 20px; border-radius: 15px; margin-top: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+    .nav-link { padding: 12px 15px !important; border-bottom: 1px solid #f1f1f1; }
+    .nav-link:last-child { border-bottom: none; }
+    .btn-primary-custom.ms-3 { margin: 15px 0 0 0 !important; width: 100%; justify-content: center; padding: 14px !important; }
+}
+
+@media (max-width: 767px) {
+    section { padding: 50px 0 !important; }
+    .container { padding-left: 20px !important; padding-right: 20px !important; }
+    
+    /* Hero scaling */
+    #hero { padding: 120px 0 60px !important; min-height: auto !important; }
+    .hero-title { font-size: 2.2rem !important; line-height: 1.2 !important; }
+    .hero-subtitle { font-size: 1rem !important; }
+    .hero-actions { flex-direction: column; gap: 12px; }
+    .hero-actions a { width: 100%; justify-content: center; }
+    
+    /* Grid cleanup */
+    .row > * { padding-left: 10px !important; padding-right: 10px !important; }
+    
+    /* Stats Bar */
+    .stats-bar-inner { grid-template-columns: 1fr 1fr !important; }
+    .stat-box { padding: 25px 15px !important; }
+    .stat-number { font-size: 1.8rem !important; }
+    
+    /* Floating button adjust */
+    #wa-btn { bottom: 85px !important; left: 20px !important; width: 50px !important; height: 50px !important; }
+    #scrollTop { bottom: 85px !important; right: 20px !important; width: 45px !important; height: 45px !important; }
+}
+
+@media (max-width: 575px) {
+    .section-title { font-size: 1.8rem !important; }
+    .stats-bar-inner { grid-template-columns: 1fr !important; }
+    .footer-bottom .d-flex { flex-direction: column; text-align: center; gap: 10px; }
+    
+    /* Tables & Map responsiveness */
+    iframe { height: 300px !important; }
+    .table-responsive { border: 0; }
+}
+
+/* Horizontal Scroll for Filters */
+@media (max-width: 767px) {
+    .filter-bar, [style*='flex-wrap:wrap;gap:10px'] { 
+        display: flex !important; 
+        flex-wrap: nowrap !important; 
+        overflow-x: auto !important; 
+        justify-content: flex-start !important;
+        padding-bottom: 15px !important;
+        -webkit-overflow-scrolling: touch;
+    }
+    .filter-bar button, [style*='flex-wrap:wrap;gap:10px'] button {
+        white-space: nowrap !important;
+        flex: 0 0 auto !important;
+    }
+}
 </style>
 </body>
 </html>
