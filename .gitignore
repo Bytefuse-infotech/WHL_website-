@@ -1,0 +1,28 @@
+# Build Scripts
+*.py
+*.md
+Readme.txt
+
+# Local Environment
+.DS_Store
+Thumbs.db
+node_modules/
+.vercel/
+
+# Artifacts
+hosting_guide.md
+audit.py
+master_patch.py
+clean_navbar.py
+patch_responsive.py
+fix_final.py
+build_departments.py
+build_inner_pages.py
+generate_screens.py
+generate_detailed_services.py
+remove_portal_btn.py
+update_design.py
+update_logo_white.py
+update_logos.py
+update_navbar_logo.py
+update_starter.py

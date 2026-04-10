@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Doctors | White Lotus International Hospital</title>
+  <meta name="description" content="White Lotus International Hospital — delivering world-class, compassionate healthcare across 25+ specialties with 120+ expert doctors and 20 years of excellence.">
+  <meta name="keywords" content="hospital, healthcare, doctors, cardiology, neurology, orthopaedics, emergency care, White Lotus">
+  <meta property="og:title" content="White Lotus International Hospital">
+  <meta property="og:description" content="World-class healthcare, compassionate care. Book your appointment today.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/hero-bg.jpg">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230A2647'/><rect x='14' y='6' width='4' height='20' rx='2' fill='%231B9CFC'/><rect x='6' y='14' width='20' height='4' rx='2' fill='%231B9CFC'/></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <style>
+    /* =============================================
+       CSS CUSTOM PROPERTIES & RESET
+    ============================================= */
+    :root {
+      --navy:   #0F172A;
+      --teal:   #0284C7;
+      --teal-dark: #0369A1;
+      --white:  #FFFFFF;
+      --grey:   #F4F6F8;
+      --green:  #10B981;
+      --text:   #2d3748;
+      --text-muted: #718096;
+      --border: #e2e8f0;
+      --shadow: 0 4px 24px rgba(10,38,71,.08);
+      --shadow-hover: 0 12px 40px rgba(10,38,71,.16);
+      --radius: 12px;
+      --transition: all .3s cubic-bezier(.4,0,.2,1);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    h1,h2,h3,h4,h5,h6 { font-family: 'Outfit', sans-serif; font-weight: 700; line-height: 1.25; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; transition: var(--transition); }
+    section { padding: 90px 0; }
+
+    /* =============================================
+       UTILITY CLASSES
+    ============================================= */
+    .section-badge {
+      display: inline-block;
+      background: rgba(27,156,252,.1);
+      color: var(--teal);
+      font-family: 'Outfit', sans-serif;
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 14px;
+    }
+    .section-title {
+      font-size: clamp(1.75rem, 3vw, 2.5rem);
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .section-title span { color: var(--teal); }
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 560px;
+    }
+    .btn-primary-custom {
+      background: var(--teal);
+      color: var(--white);
+      border: none;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: .95rem;
+      letter-spacing: .02em;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    .btn-primary-custom:hover {
+      background: var(--teal-dark);
+      color: var(--white);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(27,156,252,.4);
+    }
+    .btn-outline-custom {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid var(--white);
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: .95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    .btn-outline-custom:hover {
+      background: var(--white);
+      color: var(--navy);
+      transform: translateY(-2px);
+    }
+    .btn-navy-custom {
+      background: var(--navy);
+      color: var(--white);
+      border: none;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: .95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    .btn-navy-custom:hover {
+      background: #0d3260;
+      color: var(--white);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(10,38,71,.35);
+    }
+
+    /* =============================================
+       TOP BAR
+    ============================================= */
+    #topbar {
+      background: var(--navy);
+      padding: 10px 0;
+      font-size: .83rem;
+    }
+    #topbar a { color: rgba(255,255,255,.75); }
+    #topbar a:hover { color: var(--teal); }
+    #topbar .topbar-info { color: rgba(255,255,255,.75); display: flex; align-items: center; gap: 24px; }
+    #topbar .topbar-info i { color: var(--teal); margin-right: 6px; }
+    #topbar .topbar-social { display: flex; align-items: center; gap: 12px; }
+    #topbar .topbar-social a {
+      color: rgba(255,255,255,.6);
+      width: 28px; height: 28px;
+      display: inline-flex; align-items: center; justify-content: center;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.15);
+      font-size: .8rem;
+    }
+    #topbar .topbar-social a:hover { background: var(--teal); border-color: var(--teal); color: #fff; }
+
+    /* =============================================
+       HEADER / NAV
+    ============================================= */
+    #header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.97);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: var(--transition);
+    }
+    #header.scrolled { box-shadow: 0 4px 20px rgba(10,38,71,.1); }
+    .navbar-brand { display: flex; align-items: center; gap: 12px; }
+    .brand-logo-svg { width: 44px; height: 44px; flex-shrink: 0; }
+    .brand-text .brand-name {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: var(--navy);
+      line-height: 1.1;
+    }
+    .brand-text .brand-tagline {
+      font-size: .65rem;
+      color: var(--teal);
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .navbar { padding: 14px 0; }
+    .nav-link {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 500;
+      font-size: .9rem;
+      color: var(--navy) !important;
+      padding: 8px 16px !important;
+      border-radius: 8px;
+      transition: var(--transition);
+    }
+    .nav-link:hover, .nav-link.active {
+      color: var(--teal) !important;
+      background: rgba(27,156,252,.07);
+    }
+    .navbar-toggler { border: none; padding: 4px; }
+    .navbar-toggler:focus { box-shadow: none; }
+    .navbar-toggler-icon {
+      width: 22px; height: 2px;
+      background: var(--navy);
+      display: block;
+      position: relative;
+      transition: var(--transition);
+    }
+    .navbar-toggler-icon::before, .navbar-toggler-icon::after {
+      content: '';
+      position: absolute;
+      width: 22px; height: 2px;
+      background: var(--navy);
+      left: 0;
+      transition: var(--transition);
+    }
+    .navbar-toggler-icon::before { top: -6px; }
+    .navbar-toggler-icon::after  { top:  6px; }
+    .nav-cta {
+      background: var(--teal);
+      color: var(--white) !important;
+      padding: 9px 22px !important;
+      border-radius: 50px;
+      font-weight: 600 !important;
+    }
+    .nav-cta:hover { background: var(--teal-dark) !important; color: #fff !important; }
+
+    /* =============================================
+       HERO SECTION
+    ============================================= */
+    #hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: var(--navy);
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=1800&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      opacity: .22;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(10,38,71,.92) 0%, rgba(10,38,71,.65) 55%, rgba(27,156,252,.25) 100%);
+    }
+    .hero-content { position: relative; z-index: 2; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(27,156,252,.18);
+      border: 1px solid rgba(27,156,252,.3);
+      color: var(--teal);
+      font-size: .8rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 8px 20px;
+      border-radius: 50px;
+      margin-bottom: 24px;
+    }
+    .hero-badge::before { content: ''; width: 8px; height: 8px; background: var(--teal); border-radius: 50%; animation: pulse-dot 2s infinite; }
+    @keyframes pulse-dot {
+      0%,100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.5); opacity: .6; }
+    }
+    .hero-title {
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 22px;
+    }
+    .hero-title .highlight {
+      color: var(--teal);
+      position: relative;
+    }
+    .hero-subtitle {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,.78);
+      max-width: 520px;
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 50px; }
+    .hero-stats-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+    }
+    .hero-stat-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: rgba(255,255,255,.85);
+    }
+    .hero-stat-item .stat-icon {
+      width: 42px; height: 42px;
+      background: rgba(27,156,252,.2);
+      border: 1px solid rgba(27,156,252,.3);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--teal);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .hero-stat-item .stat-num {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--white);
+      line-height: 1.1;
+    }
+    .hero-stat-item .stat-lbl { font-size: .75rem; color: rgba(255,255,255,.6); }
+    .hero-image-col { position: relative; z-index: 2; }
+    .hero-card-float {
+      background: rgba(255,255,255,.1);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 16px;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: var(--white);
+      animation: floatCard 6s ease-in-out infinite;
+    }
+    .hero-card-float:nth-child(2) { animation-delay: -3s; }
+    @keyframes floatCard {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    .hero-card-float .card-icon {
+      width: 50px; height: 50px;
+      background: var(--teal);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    .hero-card-float .card-info strong {
+      font-family: 'Outfit', sans-serif;
+      font-size: .95rem;
+      display: block;
+    }
+    .hero-card-float .card-info span { font-size: .8rem; opacity: .75; }
+
+    /* =============================================
+       STATS BAR
+    ============================================= */
+    #stats-bar {
+      background: var(--navy);
+      padding: 0;
+    }
+    .stats-bar-inner {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .stat-box {
+      padding: 36px 24px;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,.08);
+      position: relative;
+      overflow: hidden;
+    }
+    .stat-box:last-child { border-right: none; }
+    .stat-box::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 0; height: 3px;
+      background: var(--teal);
+      transition: width .4s ease;
+    }
+    .stat-box:hover::before { width: 60%; }
+    .stat-box .stat-icon-lg {
+      font-size: 2rem;
+      color: var(--teal);
+      margin-bottom: 10px;
+      display: block;
+    }
+    .stat-box .stat-number {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-box .stat-label {
+      font-size: .83rem;
+      color: rgba(255,255,255,.55);
+      font-weight: 500;
+      letter-spacing: .04em;
+    }
+
+    /* =============================================
+       SERVICES SECTION
+    ============================================= */
+    #services { background: var(--grey); }
+    .service-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      height: 100%;
+      border: 1px solid var(--border);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--teal), var(--green));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .35s ease;
+    }
+    .service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
+    .service-card:hover::after { transform: scaleX(1); }
+    .service-icon {
+      width: 64px; height: 64px;
+      background: rgba(27,156,252,.1);
+      border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem;
+      color: var(--teal);
+      margin-bottom: 20px;
+      transition: var(--transition);
+    }
+    .service-card:hover .service-icon { background: var(--teal); color: var(--white); }
+    .service-card h4 {
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .service-card p { font-size: .88rem; color: var(--text-muted); line-height: 1.7; margin: 0; }
+    .service-card .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--teal);
+      font-weight: 600;
+      font-size: .85rem;
+      margin-top: 18px;
+      font-family: 'Outfit', sans-serif;
+    }
+    .service-card .service-link:hover { gap: 10px; }
+
+    /* =============================================
+       WHY CHOOSE US
+    ============================================= */
+    #why-us { background: var(--white); }
+    .why-feature {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 28px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      transition: var(--transition);
+      height: 100%;
+    }
+    .why-feature:hover { box-shadow: var(--shadow); border-color: rgba(27,156,252,.25); }
+    .why-icon {
+      width: 58px; height: 58px;
+      background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+      color: var(--white);
+      flex-shrink: 0;
+      box-shadow: 0 6px 20px rgba(27,156,252,.35);
+    }
+    .why-text h4 {
+      font-size: 1.05rem;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .why-text p { font-size: .87rem; color: var(--text-muted); margin: 0; line-height: 1.7; }
+    .why-image-wrap { position: relative; }
+    .why-image-wrap img {
+      border-radius: 20px;
+      box-shadow: var(--shadow-hover);
+      width: 100%;
+      object-fit: cover;
+      height: 480px;
+    }
+    .why-badge-float {
+      position: absolute;
+      bottom: 28px;
+      left: -20px;
+      background: var(--white);
+      border-radius: 14px;
+      padding: 18px 22px;
+      box-shadow: var(--shadow-hover);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .why-badge-float .badge-icon {
+      width: 48px; height: 48px;
+      background: rgba(46,204,113,.1);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      color: var(--green);
+    }
+    .why-badge-float strong {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.3rem;
+      color: var(--navy);
+      display: block;
+      line-height: 1.1;
+    }
+    .why-badge-float span { font-size: .75rem; color: var(--text-muted); }
+
+    /* =============================================
+       DOCTORS
+    ============================================= */
+    #doctors { background: var(--grey); }
+    .doctor-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: var(--transition);
+    }
+    .doctor-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+    .doctor-img {
+      position: relative;
+      overflow: hidden;
+      height: 260px;
+    }
+    .doctor-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease;
+    }
+    .doctor-card:hover .doctor-img img { transform: scale(1.06); }
+    .doctor-specialty-tag {
+      position: absolute;
+      top: 16px; left: 16px;
+      background: var(--teal);
+      color: var(--white);
+      font-size: .72rem;
+      font-weight: 600;
+      font-family: 'Outfit', sans-serif;
+      padding: 4px 12px;
+      border-radius: 50px;
+      letter-spacing: .04em;
+    }
+    .doctor-social {
+      position: absolute;
+      right: 14px; top: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      opacity: 0;
+      transform: translateX(12px);
+      transition: var(--transition);
+    }
+    .doctor-card:hover .doctor-social { opacity: 1; transform: translateX(0); }
+    .doctor-social a {
+      width: 32px; height: 32px;
+      background: rgba(255,255,255,.9);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--navy);
+      font-size: .8rem;
+    }
+    .doctor-social a:hover { background: var(--teal); color: #fff; }
+    .doctor-body {
+      padding: 20px;
+    }
+    .doctor-body h4 { font-size: 1rem; color: var(--navy); margin-bottom: 4px; }
+    .doctor-body .qualification { font-size: .8rem; color: var(--text-muted); margin-bottom: 12px; }
+    .doctor-body .experience {
+      display: flex; align-items: center; gap: 6px;
+      font-size: .82rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .doctor-body .experience i { color: var(--teal); }
+    .btn-book {
+      display: block;
+      text-align: center;
+      background: rgba(27,156,252,.08);
+      color: var(--teal);
+      border: 1px solid rgba(27,156,252,.25);
+      border-radius: 8px;
+      padding: 10px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: .85rem;
+      transition: var(--transition);
+    }
+    .btn-book:hover { background: var(--teal); color: var(--white); border-color: var(--teal); }
+
+    /* =============================================
+       TESTIMONIALS
+    ============================================= */
+    #testimonials {
+      background: linear-gradient(135deg, var(--navy) 0%, #0d3a6b 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    #testimonials::before {
+      content: '';
+      position: absolute;
+      top: -120px; right: -120px;
+      width: 400px; height: 400px;
+      background: rgba(27,156,252,.07);
+      border-radius: 50%;
+    }
+    .testi-card {
+      background: rgba(255,255,255,.07);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 18px;
+      padding: 36px 32px;
+    }
+    .testi-stars { color: #F6C90E; font-size: .9rem; margin-bottom: 16px; letter-spacing: .1em; }
+    .testi-text {
+      font-size: .97rem;
+      color: rgba(255,255,255,.85);
+      line-height: 1.8;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+    .testi-text::before { content: '\201C'; font-size: 2.5rem; color: var(--teal); line-height: .5; display: block; margin-bottom: 8px; }
+    .testi-author { display: flex; align-items: center; gap: 14px; }
+    .testi-author img {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(27,156,252,.5);
+    }
+    .testi-author strong {
+      font-family: 'Outfit', sans-serif;
+      color: var(--white);
+      font-size: .92rem;
+      display: block;
+    }
+    .testi-author span { font-size: .78rem; color: rgba(255,255,255,.55); }
+    .swiper-pagination-bullet { background: rgba(255,255,255,.4) !important; }
+    .swiper-pagination-bullet-active { background: var(--teal) !important; }
+
+    /* =============================================
+       BLOG
+    ============================================= */
+    #blog { background: var(--white); }
+    .blog-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: var(--transition);
+      height: 100%;
+    }
+    .blog-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+    .blog-img {
+      position: relative;
+      overflow: hidden;
+      height: 210px;
+    }
+    .blog-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease;
+    }
+    .blog-card:hover .blog-img img { transform: scale(1.07); }
+    .blog-category {
+      position: absolute;
+      top: 14px; left: 14px;
+      background: var(--teal);
+      color: var(--white);
+      font-size: .7rem;
+      font-weight: 700;
+      font-family: 'Outfit', sans-serif;
+      padding: 4px 12px;
+      border-radius: 50px;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+    .blog-body { padding: 22px; }
+    .blog-meta {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: .78rem;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .blog-meta i { color: var(--teal); }
+    .blog-body h4 {
+      font-size: 1rem;
+      color: var(--navy);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .blog-body h4 a { color: inherit; }
+    .blog-body h4 a:hover { color: var(--teal); }
+    .blog-body p { font-size: .85rem; color: var(--text-muted); margin-bottom: 16px; line-height: 1.65; }
+    .blog-read-more {
+      color: var(--teal);
+      font-weight: 600;
+      font-size: .84rem;
+      font-family: 'Outfit', sans-serif;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .blog-read-more:hover { gap: 10px; }
+
+    /* =============================================
+       APPOINTMENT CTA BANNER
+    ============================================= */
+    #cta-banner {
+      background: linear-gradient(135deg, var(--teal) 0%, #0f7fd4 100%);
+      padding: 72px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    #cta-banner::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: -80px;
+      width: 320px; height: 320px;
+      background: rgba(255,255,255,.06);
+      border-radius: 50%;
+    }
+    #cta-banner::after {
+      content: '';
+      position: absolute;
+      bottom: -100px; right: -60px;
+      width: 280px; height: 280px;
+      background: rgba(255,255,255,.06);
+      border-radius: 50%;
+    }
+    .cta-content { position: relative; z-index: 2; }
+    .cta-content h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: var(--white);
+      margin-bottom: 14px;
+    }
+    .cta-content p { color: rgba(255,255,255,.85); font-size: 1rem; margin: 0; }
+
+    /* =============================================
+       FOOTER
+    ============================================= */
+    #footer {
+      background: var(--navy);
+      padding-top: 70px;
+    }
+    .footer-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+    .footer-logo .brand-name { color: var(--white); font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.15rem; }
+    .footer-logo .brand-tagline { color: var(--teal); font-size: .62rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+    .footer-desc { color: rgba(255,255,255,.55); font-size: .87rem; line-height: 1.8; margin-bottom: 22px; }
+    .footer-social { display: flex; gap: 10px; }
+    .footer-social a {
+      width: 36px; height: 36px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.6);
+      font-size: .85rem;
+      transition: var(--transition);
+    }
+    .footer-social a:hover { background: var(--teal); border-color: var(--teal); color: #fff; }
+    .footer-heading {
+      font-family: 'Outfit', sans-serif;
+      font-size: .9rem;
+      font-weight: 700;
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 22px;
+      position: relative;
+      padding-bottom: 12px;
+    }
+    .footer-heading::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 36px; height: 2px;
+      background: var(--teal);
+    }
+    .footer-links { list-style: none; padding: 0; margin: 0; }
+    .footer-links li { margin-bottom: 10px; }
+    .footer-links a {
+      color: rgba(255,255,255,.55);
+      font-size: .87rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .footer-links a i { color: var(--teal); font-size: .75rem; }
+    .footer-links a:hover { color: var(--teal); padding-left: 4px; }
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+      color: rgba(255,255,255,.55);
+      font-size: .86rem;
+      line-height: 1.6;
+    }
+    .footer-contact-item i {
+      color: var(--teal);
+      font-size: 1rem;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+    .newsletter-form { display: flex; gap: 8px; margin-top: 18px; }
+    .newsletter-form input {
+      flex: 1;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 8px;
+      padding: 10px 14px;
+      color: var(--white);
+      font-size: .87rem;
+      outline: none;
+      transition: var(--transition);
+    }
+    .newsletter-form input::placeholder { color: rgba(255,255,255,.35); }
+    .newsletter-form input:focus { border-color: var(--teal); background: rgba(255,255,255,.12); }
+    .newsletter-form button {
+      background: var(--teal);
+      border: none;
+      border-radius: 8px;
+      padding: 10px 18px;
+      color: var(--white);
+      font-weight: 600;
+      font-size: .84rem;
+      cursor: pointer;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+    .newsletter-form button:hover { background: var(--teal-dark); }
+    .footer-bottom {
+      margin-top: 50px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding: 20px 0;
+    }
+    .footer-bottom p { color: rgba(255,255,255,.4); font-size: .82rem; margin: 0; }
+    .footer-bottom-links { display: flex; gap: 20px; justify-content: flex-end; flex-wrap: wrap; }
+    .footer-bottom-links a { color: rgba(255,255,255,.4); font-size: .82rem; }
+    .footer-bottom-links a:hover { color: var(--teal); }
+
+    /* =============================================
+       SCROLL TO TOP
+    ============================================= */
+    #scrollTop {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      width: 46px; height: 46px;
+      background: var(--teal);
+      color: var(--white);
+      border: none;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+      cursor: pointer;
+      z-index: 999;
+      box-shadow: 0 4px 16px rgba(27,156,252,.4);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: var(--transition);
+    }
+    #scrollTop.visible { opacity: 1; transform: translateY(0); }
+    #scrollTop:hover { background: var(--teal-dark); transform: translateY(-3px); }
+
+    /* =============================================
+       RESPONSIVE
+    ============================================= */
+    @media (max-width: 991px) {
+      .stats-bar-inner { grid-template-columns: repeat(2, 1fr); }
+      .stat-box { border-right: 1px solid rgba(255,255,255,.08); }
+      .stat-box:nth-child(2) { border-right: none; }
+      .why-image-wrap { margin-bottom: 40px; }
+      .why-badge-float { left: 10px; }
+    }
+    @media (max-width: 767px) {
+      section { padding: 65px 0; }
+      .hero-title { font-size: 2rem; }
+      .stats-bar-inner { grid-template-columns: repeat(2, 1fr); }
+      .hero-stats-row { gap: 16px; }
+      .hero-actions { flex-direction: column; align-items: flex-start; }
+      .cta-content { text-align: center; }
+      .footer-bottom-links { justify-content: center; margin-top: 10px; }
+      .footer-bottom p { text-align: center; }
+    }
+    @media (max-width: 576px) {
+      .stats-bar-inner { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* Page loader */
+    #page-loader {
+      position: fixed;
+      inset: 0;
+      background: var(--navy);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity .5s ease, visibility .5s ease;
+    }
+    #page-loader.loaded { opacity: 0; visibility: hidden; }
+    .loader-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .loader-cross {
+      width: 50px; height: 50px;
+      position: relative;
+    }
+    .loader-cross::before, .loader-cross::after {
+      content: '';
+      position: absolute;
+      background: var(--teal);
+      border-radius: 3px;
+    }
+    .loader-cross::before { top: 0; left: 50%; transform: translateX(-50%); width: 12px; height: 50px; }
+    .loader-cross::after { top: 50%; left: 0; transform: translateY(-50%); width: 50px; height: 12px; }
+    .loader-text {
+      color: rgba(255,255,255,.7);
+      font-family: 'Outfit', sans-serif;
+      font-size: .85rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      animation: loader-pulse 1.5s ease-in-out infinite;
+    }
+    @keyframes loader-pulse {
+      0%,100% { opacity: .5; }
+      50% { opacity: 1; }
+    }
+  </style>
+<style>
+
+    /* ─────────────────────────────────────────────
+       RESPONSIVE — COMPREHENSIVE MOBILE POLISH
+       ───────────────────────────────────────────── */
+
+    /* Topbar: hide social on very small screens, compress info */
+    @media (max-width: 575px) {
+      #topbar { display: none; }
+    }
+
+    /* Navbar */
+    @media (max-width: 991px) {
+      .navbar { padding: 10px 0; }
+      #navbarMain {
+        background: #fff;
+        border-top: 1px solid var(--border);
+        margin-top: 10px;
+        border-radius: 12px;
+        padding: 16px;
+        box-shadow: 0 12px 40px rgba(10,38,71,.12);
+      }
+      .navbar-nav { flex-direction: column; gap: 4px !important; }
+      .nav-link { padding: 10px 14px !important; border-radius: 8px; }
+      .nav-cta { margin-top: 10px; text-align: center; border-radius: 50px; }
+      a.btn-primary-custom.ms-3 { margin: 12px 0 0 0 !important; width: 100%; justify-content: center; }
+    }
+
+    /* Hero section */
+    @media (max-width: 767px) {
+      #hero { min-height: auto; padding: 100px 0 60px; }
+      .hero-title { font-size: clamp(1.8rem, 6vw, 2.4rem) !important; }
+      .hero-subtitle { font-size: .95rem; }
+      .hero-actions { flex-direction: column; width: 100%; }
+      .hero-actions a, .hero-actions button { width: 100%; justify-content: center; }
+      .hero-stats-row { gap: 14px; }
+      .hero-image-col { display: none; }
+    }
+
+    /* Stats bar */
+    @media (max-width: 767px) {
+      .stats-bar-inner { grid-template-columns: repeat(2, 1fr) !important; }
+      .stat-box { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,.08); }
+      .stat-box .stat-number { font-size: 1.8rem; }
+    }
+    @media (max-width: 400px) {
+      .stats-bar-inner { grid-template-columns: 1fr !important; }
+    }
+
+    /* Sections general */
+    @media (max-width: 767px) {
+      section { padding: 60px 0 !important; }
+      .section-title { font-size: clamp(1.5rem, 5vw, 2rem) !important; }
+      .section-subtitle { font-size: .9rem; }
+      .section-badge { font-size: .7rem; }
+    }
+
+    /* Service cards grid */
+    @media (max-width: 576px) {
+      .service-card { padding: 24px 18px; }
+    }
+
+    /* Why-us image + badge */
+    @media (max-width: 991px) {
+      .why-image-wrap { margin-bottom: 40px; }
+      .why-badge-float { left: 10px; padding: 12px 16px; }
+      .why-image-wrap img { height: 320px !important; }
+    }
+    @media (max-width: 767px) {
+      .why-badge-float { display: none; }
+    }
+
+    /* Doctors section */
+    @media (max-width: 576px) {
+      .doctor-img { height: 200px; }
+    }
+
+    /* Testimonials swiper */
+    @media (max-width: 767px) {
+      .testi-card { padding: 24px 20px; }
+      .testi-text { font-size: .88rem; }
+    }
+
+    /* Blog cards */
+    @media (max-width: 576px) {
+      .blog-img { height: 170px; }
+      .blog-body { padding: 16px; }
+    }
+
+    /* CTA Banner */
+    @media (max-width: 767px) {
+      #cta-banner { padding: 50px 0; }
+      .cta-content { text-align: center; }
+      .cta-content .d-flex { flex-direction: column; align-items: center; gap: 12px; }
+      .cta-content a { width: 100%; justify-content: center; }
+    }
+
+    /* Footer */
+    @media (max-width: 991px) {
+      #footer { padding-top: 50px; }
+      .footer-logo { margin-bottom: 12px; }
+    }
+    @media (max-width: 767px) {
+      #footer .row.g-5 > div { margin-bottom: 8px; }
+      .newsletter-form { flex-direction: column; }
+      .newsletter-form input, .newsletter-form button { width: 100%; border-radius: 8px; }
+      .footer-bottom .d-flex { flex-direction: column; align-items: center; gap: 8px; }
+      .footer-bottom-links { justify-content: center; }
+    }
+
+    /* Scroll-to-top button */
+    @media (max-width: 576px) {
+      #scrollTop { bottom: 16px; right: 16px; width: 40px; height: 40px; border-radius: 10px; }
+    }
+
+    /* Inner-page hero (subpages) */
+    @media (max-width: 767px) {
+      .service-hero, section[style*="padding:140px"] {
+        padding: 100px 0 60px !important;
+      }
+    }
+
+    /* Department service-icon grid on mobile */
+    @media (max-width: 576px) {
+      .feature-icon, .sicon { width: 48px !important; height: 48px !important; font-size: 1.1rem !important; }
+    }
+
+    /* Inline stats banners (department pages) */
+    @media (max-width: 576px) {
+      .stats-banner .row > div { padding: 24px 8px !important; }
+      .stats-banner h2.display-4 { font-size: 2rem !important; }
+    }
+
+    /* Timeline (patient journey) */
+    @media (max-width: 576px) {
+      .timeline-item { padding-left: 28px; }
+    }
+
+    /* Contact / Appointment form panels */
+    @media (max-width: 767px) {
+      form .row.g-3 > div { margin-bottom: 4px; }
+    }
+
+    /* Camp / promo cards */
+    @media (max-width: 767px) {
+      .camp-card { padding: 30px 22px !important; }
+    }
+
+    /* Appointment sidebar stacks below form on mobile */
+    @media (max-width: 991px) {
+      .col-lg-4 > div[style*="background:var(--navy)"],
+      .col-lg-4 > div[style*="background:linear-gradient(135deg,#dc2626"] { margin-bottom: 16px; }
+    }
+
+    /* Doctor filter buttons wrap cleanly */
+    @media (max-width: 576px) {
+      #doctors-grid .col-lg-3 { flex: 0 0 100%; max-width: 100%; }
+    }
+
+    /* Blog filter bar scroll on narrow */
+    @media (max-width: 576px) {
+      .filter-bar { overflow-x: auto; flex-wrap: nowrap !important; padding-bottom: 8px; }
+      .filter-bar span, .filter-bar button { white-space: nowrap; flex-shrink: 0; }
+    }
+
+    /* Emergency page blink badge */
+    @media (max-width: 576px) {
+      #emergency-call-cta a { font-size: 1rem !important; padding: 12px 24px !important; }
+    }
+
+    /* General: prevent inline-style overflow on small screens */
+    @media (max-width: 576px) {
+      [style*="max-width:600px"], [style*="max-width:650px"], [style*="max-width:620px"] {
+        max-width: 100% !important;
+      }
+      [style*="height: 480px"], [style*="height:480px"],
+      [style*="height: 460px"], [style*="height:460px"],
+      [style*="height: 440px"], [style*="height:440px"] {
+        height: 260px !important;
+      }
+      [style*="height: 260px"], [style*="height:260px"] {
+        height: 200px !important;
+      }
+    }
+
+    /* Prevent horizontal scroll globally */
+    body { max-width: 100vw; overflow-x: hidden !important; }
+    .container { padding-left: 16px !important; padding-right: 16px !important; }
+    @media (max-width: 576px) {
+      .container { padding-left: 12px !important; padding-right: 12px !important; }
+    }
+
+</style>
+</head>
+
+<body>
+
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <div class="loader-inner">
+      <div class="loader-cross"></div>
+      <p class="loader-text">White Lotus Hospital</p>
+    </div>
+  </div>
+
+  <!-- =========================================
+       TOP BAR
+  ========================================= -->
+  <div id="topbar">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="topbar-info">
+          <span><i class="fas fa-envelope"></i><a href="mailto:info@whitelotushospital.com">info@whitelotushospital.com</a></span>
+          <span class="d-none d-sm-flex align-items-center"><i class="fas fa-phone-alt"></i><a href="tel:+918879307930">88 7930 7930</a></span>
+          <span class="d-none d-md-flex align-items-center"><i class="fas fa-clock"></i>Emergency: 24 / 7 Open</span>
+        </div>
+        <div class="topbar-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================
+       HEADER
+  ========================================= -->
+  <header id="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/fullLogoWhite.png" alt="White Lotus International Hospital" style="height: 55px; width: auto; object-fit: contain;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon d-block"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mx-auto gap-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="departments.html">Departments</a></li>
+            <li class="nav-item"><a class="nav-link active" href="doctors.html">Doctors</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          
+          </ul>
+          <a href="appointment.html" class="btn-primary-custom ms-3 d-none d-lg-inline-flex">
+            <i class="fas fa-calendar-check"></i> Book Appointment
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+<style>
+.wl-breadcrumb{background:rgba(255,255,255,.08);backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(255,255,255,.1);padding:10px 0;position:relative;z-index:3;}
+.wl-breadcrumb ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:6px;}
+.wl-breadcrumb li{font-size:.78rem;color:rgba(255,255,255,.55);}
+.wl-breadcrumb li a{color:rgba(255,255,255,.7);text-decoration:none;transition:color .2s;}
+.wl-breadcrumb li a:hover{color:var(--teal);}
+.wl-breadcrumb li:not(:last-child)::after{content:'/';margin-left:6px;opacity:.4;}
+.wl-breadcrumb li:last-child{color:#fff;font-weight:500;}
+</style><nav class="wl-breadcrumb"><div class="container"><ol><li><a href="index.html">Home</a></li><li>Our Doctors</li></ol></div></nav>
+<section style="position:relative;padding:140px 0 90px;background:var(--navy);overflow:hidden;">
+  <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=1800&q=80');background-size:cover;background-position:center;opacity:.18;"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,38,71,.96) 0%,rgba(27,156,252,.3) 100%);"></div>
+  <div class="container" style="position:relative;z-index:2;text-align:center;">
+    <span style="display:inline-block;padding:6px 20px;background:rgba(255,255,255,.1);color:var(--teal);border:1px solid rgba(27,156,252,.3);border-radius:50px;font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:20px;">Meet Our Experts</span>
+    <h1 style="color:#fff;font-size:clamp(2.2rem,4vw,3.5rem);font-weight:800;margin-bottom:18px;">Our Team of 200+ Specialist Doctors</h1>
+    <p style="color:rgba(255,255,255,.78);font-size:1.05rem;max-width:600px;margin:0 auto;">Internationally trained, compassionate and committed to delivering world-class care across 25+ specialties.</p>
+  </div>
+</section>
+
+<section style="padding:90px 0;background:var(--grey);">
+  <div class="container">
+    <!-- Filter & Search Bar -->
+    <div style="max-width: 800px; margin: 0 auto 48px;">
+      <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:24px;">
+        <button onclick="filterDocs('all')" id="btn-all" style="padding:8px 22px;border-radius:50px;font-family:'Outfit',sans-serif;font-weight:600;font-size:.85rem;border:2px solid var(--teal);background:var(--teal);color:#fff;cursor:pointer;transition:all .3s;">All</button>
+        <button onclick="filterDocs('cardiology')" id="btn-cardiology" style="padding:8px 22px;border-radius:50px;font-family:'Outfit',sans-serif;font-weight:600;font-size:.85rem;border:2px solid var(--border);background:#fff;color:var(--navy);cursor:pointer;transition:all .3s;">Cardiology</button>
+        <button onclick="filterDocs('orthopaedics')" id="btn-orthopaedics" style="padding:8px 22px;border-radius:50px;font-family:'Outfit',sans-serif;font-weight:600;font-size:.85rem;border:2px solid var(--border);background:#fff;color:var(--navy);cursor:pointer;transition:all .3s;">Orthopaedics</button>
+        <button onclick="filterDocs('neurology')" id="btn-neurology" style="padding:8px 22px;border-radius:50px;font-family:'Outfit',sans-serif;font-weight:600;font-size:.85rem;border:2px solid var(--border);background:#fff;color:var(--navy);cursor:pointer;transition:all .3s;">Neurology</button>
+        <button onclick="filterDocs('paediatrics')" id="btn-paediatrics" style="padding:8px 22px;border-radius:50px;font-family:'Outfit',sans-serif;font-weight:600;font-size:.85rem;border:2px solid var(--border);background:#fff;color:var(--navy);cursor:pointer;transition:all .3s;">Paediatrics</button>
+        <button onclick="filterDocs('gynaecology')" id="btn-gynaecology" style="padding:8px 22px;border-radius:50px;font-family:'Outfit',sans-serif;font-weight:600;font-size:.85rem;border:2px solid var(--border);background:#fff;color:var(--navy);cursor:pointer;transition:all .3s;">Gynaecology</button>
+      </div>
+      <div style="position:relative;max-width:500px;margin:0 auto;">
+        <i class="fas fa-search" style="position:absolute;left:20px;top:50%;transform:translateY(-50%);color:var(--teal);opacity:.6;"></i>
+        <input type="text" id="docSearch" placeholder="Search by name or specialty..." 
+               style="width:100%;padding:14px 20px 14px 50px;border-radius:50px;border:1px solid var(--border);background:#fff;font-size:.92rem;outline:none;box-shadow:0 4px 12px rgba(0,0,0,.04);transition:all .3s;"
+               oninput="filterDocs(currentDept)">
+      </div>
+    </div>
+    <div class="row g-4" id="doctors-grid">
+
+<div class="col-lg-3 col-md-6" data-aos="fade-up">
+  <div style="background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--border);transition:all .3s ease;">
+    <div style="position:relative;height:260px;overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80" style="width:100%;height:100%;object-fit:cover;transition:transform .5s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+      <span style="position:absolute;top:14px;left:14px;background:#0284C7;color:#fff;font-size:.7rem;font-weight:700;padding:4px 12px;border-radius:50px;letter-spacing:.04em;">Cardiology</span>
+    </div>
+    <div style="padding:20px;">
+      <h5 style="color:var(--navy);margin-bottom:4px;font-size:1rem;">Dr. Anita Sharma</h5>
+      <p style="color:var(--text-muted);font-size:.8rem;margin-bottom:10px;">MD, DM (Cardiology)</p>
+      <p style="color:var(--text-muted);font-size:.82rem;margin-bottom:16px;"><i class="fas fa-briefcase-medical" style="color:var(--teal);margin-right:6px;"></i>15+ years experience</p>
+      <a href="appointment.html" style="display:block;text-align:center;background:rgba(27,156,252,.08);color:var(--teal);border:1px solid rgba(27,156,252,.25);border-radius:8px;padding:10px;font-weight:600;font-size:.85rem;font-family:'Outfit',sans-serif;transition:all .3s;" onmouseover="this.style.background='var(--teal)';this.style.color='#fff'" onmouseout="this.style.background='rgba(27,156,252,.08)';this.style.color='var(--teal)'">Book Appointment</a>
+    </div>
+  </div>
+</div><div class="doc-dept d-none">cardiology</div>
+<div class="col-lg-3 col-md-6" data-aos="fade-up">
+  <div style="background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--border);transition:all .3s ease;">
+    <div style="position:relative;height:260px;overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80" style="width:100%;height:100%;object-fit:cover;transition:transform .5s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+      <span style="position:absolute;top:14px;left:14px;background:#0284C7;color:#fff;font-size:.7rem;font-weight:700;padding:4px 12px;border-radius:50px;letter-spacing:.04em;">Cardiology</span>
+    </div>
+    <div style="padding:20px;">
+      <h5 style="color:var(--navy);margin-bottom:4px;font-size:1rem;">Dr. Rajesh Mehta</h5>
+      <p style="color:var(--text-muted);font-size:.8rem;margin-bottom:10px;">MBBS, MD, DM (Cardiology)</p>
+      <p style="color:var(--text-muted);font-size:.82rem;margin-bottom:16px;"><i class="fas fa-briefcase-medical" style="color:var(--teal);margin-right:6px;"></i>12+ years experience</p>
+      <a href="appointment.html" style="display:block;text-align:center;background:rgba(27,156,252,.08);color:var(--teal);border:1px solid rgba(27,156,252,.25);border-radius:8px;padding:10px;font-weight:600;font-size:.85rem;font-family:'Outfit',sans-serif;transition:all .3s;" onmouseover="this.style.background='var(--teal)';this.style.color='#fff'" onmouseout="this.style.background='rgba(27,156,252,.08)';this.style.color='var(--teal)'">Book Appointment</a>
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-6" data-aos="fade-up">
+  <div style="background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--border);transition:all .3s ease;">
+    <div style="position:relative;height:260px;overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80" style="width:100%;height:100%;object-fit:cover;transition:transform .5s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+      <span style="position:absolute;top:14px;left:14px;background:#e67e22;color:#fff;font-size:.7rem;font-weight:700;padding:4px 12px;border-radius:50px;letter-spacing:.04em;">Orthopaedics</span>
+    </div>
+    <div style="padding:20px;">
+      <h5 style="color:var(--navy);margin-bottom:4px;font-size:1rem;">Dr. Harpreet Singh</h5>
+      <p style="color:var(--text-muted);font-size:.8rem;margin-bottom:10px;">MS (Ortho), DNB</p>
+      <p style="color:var(--text-muted);font-size:.82rem;margin-bottom:16px;"><i class="fas fa-briefcase-medical" style="color:var(--teal);margin-right:6px;"></i>10+ years experience</p>
+      <a href="appointment.html" style="display:block;text-align:center;background:rgba(27,156,252,.08);color:var(--teal);border:1px solid rgba(27,156,252,.25);border-radius:8px;padding:10px;font-weight:600;font-size:.85rem;font-family:'Outfit',sans-serif;transition:all .3s;" onmouseover="this.style.background='var(--teal)';this.style.color='#fff'" onmouseout="this.style.background='rgba(27,156,252,.08)';this.style.color='var(--teal)'">Book Appointment</a>
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-6" data-aos="fade-up">
+  <div style="background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--border);transition:all .3s ease;">
+    <div style="position:relative;height:260px;overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80" style="width:100%;height:100%;object-fit:cover;transition:transform .5s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+      <span style="position:absolute;top:14px;left:14px;background:#10B981;color:#fff;font-size:.7rem;font-weight:700;padding:4px 12px;border-radius:50px;letter-spacing:.04em;">Paediatrics</span>
+    </div>
+    <div style="padding:20px;">
+      <h5 style="color:var(--navy);margin-bottom:4px;font-size:1rem;">Dr. Priya Joshi</h5>
+      <p style="color:var(--text-muted);font-size:.8rem;margin-bottom:10px;">MBBS, MD (Paediatrics)</p>
+      <p style="color:var(--text-muted);font-size:.82rem;margin-bottom:16px;"><i class="fas fa-briefcase-medical" style="color:var(--teal);margin-right:6px;"></i>8+ years experience</p>
+      <a href="appointment.html" style="display:block;text-align:center;background:rgba(27,156,252,.08);color:var(--teal);border:1px solid rgba(27,156,252,.25);border-radius:8px;padding:10px;font-weight:600;font-size:.85rem;font-family:'Outfit',sans-serif;transition:all .3s;" onmouseover="this.style.background='var(--teal)';this.style.color='#fff'" onmouseout="this.style.background='rgba(27,156,252,.08)';this.style.color='var(--teal)'">Book Appointment</a>
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-6" data-aos="fade-up">
+  <div style="background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--border);transition:all .3s ease;">
+    <div style="position:relative;height:260px;overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&q=80" style="width:100%;height:100%;object-fit:cover;transition:transform .5s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+      <span style="position:absolute;top:14px;left:14px;background:#7c3aed;color:#fff;font-size:.7rem;font-weight:700;padding:4px 12px;border-radius:50px;letter-spacing:.04em;">Neurology</span>
+    </div>
+    <div style="padding:20px;">
+      <h5 style="color:var(--navy);margin-bottom:4px;font-size:1rem;">Dr. Sunil Rao</h5>
+      <p style="color:var(--text-muted);font-size:.8rem;margin-bottom:10px;">MBBS, MD, DM (Neurology)</p>
+      <p style="color:var(--text-muted);font-size:.82rem;margin-bottom:16px;"><i class="fas fa-briefcase-medical" style="color:var(--teal);margin-right:6px;"></i>14+ years experience</p>
+      <a href="appointment.html" style="display:block;text-align:center;background:rgba(27,156,252,.08);color:var(--teal);border:1px solid rgba(27,156,252,.25);border-radius:8px;padding:10px;font-weight:600;font-size:.85rem;font-family:'Outfit',sans-serif;transition:all .3s;" onmouseover="this.style.background='var(--teal)';this.style.color='#fff'" onmouseout="this.style.background='rgba(27,156,252,.08)';this.style.color='var(--teal)'">Book Appointment</a>
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-6" data-aos="fade-up">
+  <div style="background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--border);transition:all .3s ease;">
+    <div style="position:relative;height:260px;overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80" style="width:100%;height:100%;object-fit:cover;transition:transform .5s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+      <span style="position:absolute;top:14px;left:14px;background:#db2777;color:#fff;font-size:.7rem;font-weight:700;padding:4px 12px;border-radius:50px;letter-spacing:.04em;">Gynaecology</span>
+    </div>
+    <div style="padding:20px;">
+      <h5 style="color:var(--navy);margin-bottom:4px;font-size:1rem;">Dr. Meera Nair</h5>
+      <p style="color:var(--text-muted);font-size:.8rem;margin-bottom:10px;">MBBS, MS (Obs & Gyn)</p>
+      <p style="color:var(--text-muted);font-size:.82rem;margin-bottom:16px;"><i class="fas fa-briefcase-medical" style="color:var(--teal);margin-right:6px;"></i>11+ years experience</p>
+      <a href="appointment.html" style="display:block;text-align:center;background:rgba(27,156,252,.08);color:var(--teal);border:1px solid rgba(27,156,252,.25);border-radius:8px;padding:10px;font-weight:600;font-size:.85rem;font-family:'Outfit',sans-serif;transition:all .3s;" onmouseover="this.style.background='var(--teal)';this.style.color='#fff'" onmouseout="this.style.background='rgba(27,156,252,.08)';this.style.color='var(--teal)'">Book Appointment</a>
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-6" data-aos="fade-up">
+  <div style="background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--border);transition:all .3s ease;">
+    <div style="position:relative;height:260px;overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&q=80" style="width:100%;height:100%;object-fit:cover;transition:transform .5s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+      <span style="position:absolute;top:14px;left:14px;background:#e67e22;color:#fff;font-size:.7rem;font-weight:700;padding:4px 12px;border-radius:50px;letter-spacing:.04em;">Orthopaedics</span>
+    </div>
+    <div style="padding:20px;">
+      <h5 style="color:var(--navy);margin-bottom:4px;font-size:1rem;">Dr. Anil Kapoor</h5>
+      <p style="color:var(--text-muted);font-size:.8rem;margin-bottom:10px;">MBBS, MS, MCh (Orthopaedics)</p>
+      <p style="color:var(--text-muted);font-size:.82rem;margin-bottom:16px;"><i class="fas fa-briefcase-medical" style="color:var(--teal);margin-right:6px;"></i>18+ years experience</p>
+      <a href="appointment.html" style="display:block;text-align:center;background:rgba(27,156,252,.08);color:var(--teal);border:1px solid rgba(27,156,252,.25);border-radius:8px;padding:10px;font-weight:600;font-size:.85rem;font-family:'Outfit',sans-serif;transition:all .3s;" onmouseover="this.style.background='var(--teal)';this.style.color='#fff'" onmouseout="this.style.background='rgba(27,156,252,.08)';this.style.color='var(--teal)'">Book Appointment</a>
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-6" data-aos="fade-up">
+  <div style="background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--border);transition:all .3s ease;">
+    <div style="position:relative;height:260px;overflow:hidden;">
+      <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?w=400&q=80" style="width:100%;height:100%;object-fit:cover;transition:transform .5s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+      <span style="position:absolute;top:14px;left:14px;background:#0284C7;color:#fff;font-size:.7rem;font-weight:700;padding:4px 12px;border-radius:50px;letter-spacing:.04em;">Cardiology</span>
+    </div>
+    <div style="padding:20px;">
+      <h5 style="color:var(--navy);margin-bottom:4px;font-size:1rem;">Dr. Kavya Pillai</h5>
+      <p style="color:var(--text-muted);font-size:.8rem;margin-bottom:10px;">MBBS, MD, DM (Cardiology)</p>
+      <p style="color:var(--text-muted);font-size:.82rem;margin-bottom:16px;"><i class="fas fa-briefcase-medical" style="color:var(--teal);margin-right:6px;"></i>9+ years experience</p>
+      <a href="appointment.html" style="display:block;text-align:center;background:rgba(27,156,252,.08);color:var(--teal);border:1px solid rgba(27,156,252,.25);border-radius:8px;padding:10px;font-weight:600;font-size:.85rem;font-family:'Outfit',sans-serif;transition:all .3s;" onmouseover="this.style.background='var(--teal)';this.style.color='#fff'" onmouseout="this.style.background='rgba(27,156,252,.08)';this.style.color='var(--teal)'">Book Appointment</a>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+<script>
+let currentDept = 'all';
+function filterDocs(dept) {
+  currentDept = dept;
+  const query = document.getElementById('docSearch').value.toLowerCase();
+  
+  document.querySelectorAll('#doctors-grid > div').forEach(card => {
+    const tag = card.querySelector('span[style*="top:14px"]');
+    const name = card.querySelector('h5').textContent.toLowerCase();
+    const deptTxt = tag ? tag.textContent.trim().toLowerCase() : '';
+    const qualification = card.querySelector('p').textContent.toLowerCase();
+    
+    const matchesDept = (dept === 'all' || deptTxt.includes(dept));
+    const matchesSearch = (name.includes(query) || deptTxt.includes(query) || qualification.includes(query));
+    
+    card.style.display = (matchesDept && matchesSearch) ? '' : 'none';
+  });
+  
+  document.querySelectorAll('[id^="btn-"]').forEach(b => {
+    b.style.background = '#fff'; b.style.color = 'var(--navy)'; b.style.borderColor = 'var(--border)';
+  });
+  const active = document.getElementById('btn-' + dept);
+  if (active) { active.style.background = 'var(--teal)'; active.style.color = '#fff'; active.style.borderColor = 'var(--teal)'; }
+}
+</script>
+<footer id="footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-logo">
+            <img src="assets/img/fullLogoWhite.png" alt="White Lotus International Hospital" style="height: 50px; width: auto; object-fit: contain;">
+          </div>
+          <p class="footer-desc">Delivering world-class, compassionate healthcare for over 20 years. Your health is our highest purpose.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="doctors.html"><i class="fas fa-chevron-right"></i> Our Doctors</a></li>
+            <li><a href="departments.html"><i class="fas fa-chevron-right"></i> Departments</a></li>
+            <li><a href="appointment.html"><i class="fas fa-chevron-right"></i> Book Appointment</a></li>
+            <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Health Blog</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Col 3: Services -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <h5 class="footer-heading">Our Services</h5>
+          <ul class="footer-links">
+            <li><a href="cardiology.html"><i class="fas fa-chevron-right"></i> Cardiology</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Neurology</a></li>
+            <li><a href="orthopedics.html"><i class="fas fa-chevron-right"></i> Orthopaedics</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Paediatrics</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Oncology</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Gynaecology</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Emergency Care</a></li>
+          </ul>
+        </div>
+        <!-- Col 4: Contact + Newsletter -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-heading">Get in Touch</h5>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Plot No-1, Roadpali Road (Opp. Police Headquarters),<br>Sector 20, Kalamboli, Navi Mumbai</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span><a href="tel:+918879307930" style="color:inherit;">88 7930 7930</a><br>
+            <strong style="color:var(--teal);">Emergency: 1800 313 8990</strong></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@whitelotushospital.com" style="color:inherit;">info@whitelotushospital.com</a>
+          </div>
+          <h5 class="footer-heading mt-4">Newsletter</h5>
+          <p style="color:rgba(255,255,255,.45); font-size:.84rem; margin-bottom:0;">Get the latest health tips delivered to your inbox.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address" aria-label="Email for newsletter">
+            <button type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center">
+          <p>&copy; 2025 White Lotus International Hospital. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- =========================================
+       VENDOR JS
+  ========================================= -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    // =============================================
+    // PAGE LOADER
+    // =============================================
+    window.addEventListener('load', () => {
+      document.getElementById('page-loader').classList.add('loaded');
+    });
+
+    // =============================================
+    // AOS INIT
+    // =============================================
+    AOS.init({
+      duration: 750,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 60
+    });
+
+    // =============================================
+    // PURECOUNTER
+    // =============================================
+    new PureCounter();
+
+    // =============================================
+    // TESTIMONIAL SWIPER
+    // =============================================
+    new Swiper('.testimonialSwiper', {
+      slidesPerView: 1,
+      spaceBetween: 28,
+      loop: true,
+      autoplay: { delay: 5000, disableOnInteraction: false },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1200: { slidesPerView: 3 }
+      }
+    });
+
+    // =============================================
+    // STICKY HEADER SHADOW
+    // =============================================
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // =============================================
+    // SCROLL TO TOP
+    // =============================================
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    });
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // =============================================
+    // ACTIVE NAV LINK (current page)
+    // =============================================
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-link').forEach(link => {
+      const href = link.getAttribute('href');
+      if (href === currentPage) {
+        link.classList.add('active');
+      } else if (href !== 'index.html') {
+        link.classList.remove('active');
+      }
+    });
+
+    // =============================================
+    // NAVBAR COLLAPSE ON LINK CLICK (mobile)
+    // =============================================
+    document.querySelectorAll('#navbarMain .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const navbarCollapse = document.getElementById('navbarMain');
+        if (navbarCollapse.classList.contains('show')) {
+          new bootstrap.Collapse(navbarCollapse).hide();
+        }
+      });
+    });
+  </script>
+
+<!-- ─── WHATSAPP FLOATING BUTTON ─── -->
+<a href="https://wa.me/918879307930?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20White%20Lotus%20Hospital%20services."
+   id="wa-btn" target="_blank" rel="noopener"
+   title="Chat with us on WhatsApp"
+   style="position:fixed;bottom:28px;left:28px;z-index:9998;
+          width:58px;height:58px;border-radius:50%;
+          background:#25D366;color:#fff;
+          display:flex;align-items:center;justify-content:center;
+          font-size:1.6rem;
+          box-shadow:0 6px 24px rgba(37,211,102,.5);
+          transition:all .3s;text-decoration:none;"
+   onmouseover="this.style.transform='scale(1.12)';this.style.boxShadow='0 10px 32px rgba(37,211,102,.65)'"
+   onmouseout="this.style.transform='';this.style.boxShadow='0 6px 24px rgba(37,211,102,.5)'">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ─── STICKY MOBILE EMERGENCY BAR ─── -->
+<div id="mob-emergency"
+     style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9997;
+            background:#dc2626;padding:10px 16px;
+            align-items:center;justify-content:space-between;gap:8px;">
+  <span style="color:#fff;font-size:.82rem;font-weight:600;"><i class="fas fa-ambulance" style="margin-right:6px;"></i>24/7 Emergency</span>
+  <a href="tel:18003138990"
+     style="background:#fff;color:#dc2626;padding:7px 18px;border-radius:50px;
+            font-family:'Outfit',sans-serif;font-weight:700;font-size:.85rem;white-space:nowrap;text-decoration:none;">
+     Call 1800 313 8990
+  </a>
+</div>
+<style>
+  @media(max-width:767px){
+    #mob-emergency{display:flex!important;}
+    body{padding-bottom:54px;}
+    #wa-btn{bottom:78px;}
+    #scrollTop{bottom:80px;}
+  }
+</style>
+</body>
+</html>
