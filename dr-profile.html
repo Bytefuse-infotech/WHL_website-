@@ -1175,28 +1175,6 @@
   </div>
 
   <!-- =========================================
-       TOP BAR
-  ========================================= -->
-  <div id="topbar">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="topbar-info">
-          <span><i class="fas fa-envelope"></i><a href="mailto:info@whitelotushospital.com">info@whitelotushospital.com</a></span>
-          <span class="d-none d-sm-flex align-items-center"><i class="fas fa-phone-alt"></i><a href="tel:+918879307930">88 7930 7930</a></span>
-          <span class="d-none d-md-flex align-items-center"><i class="fas fa-clock"></i>Emergency: 24 / 7 Open</span>
-        </div>
-        <div class="topbar-social">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- =========================================
        HEADER
   ========================================= -->
   <header id="header">
@@ -1398,9 +1376,17 @@
 <section class="doctor-hero">
   <div class="container">
     <div class="row align-items-center g-5">
+      
       <div class="col-lg-4 text-center text-lg-start" data-aos="fade-right">
-        <img src="assets/img/doctors/WhatsApp Image 2026-04-10 at 9.50.22 PM.jpeg" alt="Doctor Profile" class="doctor-profile-img">
+        <div style="position:relative; display:inline-block;">
+          <img src="assets/img/doctors/WhatsApp Image 2026-04-10 at 9.50.22 PM.jpeg" alt="Dr. Rajesh Verma" class="doctor-profile-img">
+          <a href="#" class="glightbox" onclick="event.preventDefault(); alert('Meet the Doctor Video Playing...');" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:80px; height:80px; background:var(--teal); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-size:28px; box-shadow:0 0 0 10px rgba(2,132,199,0.3); animation: pulse-video 2s infinite; text-decoration: none;">
+             <i class="fas fa-play" style="margin-left: 5px;"></i>
+          </a>
+        </div>
+        <style>@keyframes pulse-video { 0% { box-shadow:0 0 0 0 rgba(2,132,199,0.5); } 70% { box-shadow:0 0 0 25px rgba(2,132,199,0); } 100% { box-shadow:0 0 0 0 rgba(2,132,199,0); } }</style>
       </div>
+
       <div class="col-lg-8" data-aos="fade-left">
         <div class="section-badge mb-3">Senior Consultant</div>
         <h1 class="doc-name">Dr. Rajesh Verma</h1>
@@ -1433,14 +1419,19 @@
           </div>
         </div>
         
-        <div class="d-flex gap-3 mt-2 flex-wrap">
-          <a href="appointment.html" class="btn-primary-custom">
+        
+        <div class="d-flex gap-3 mt-4 flex-wrap">
+          <a href="#" class="btn-primary-custom" data-bs-toggle="modal" data-bs-target="#quickBookModal">
             <i class="fas fa-calendar-check"></i> Book Appointment
           </a>
-          <a href="tel:+918879307930" class="btn-outline-custom" style="border-color: var(--teal); color: var(--teal);">
-            <i class="fas fa-phone-alt"></i> Call Now
+          <a href="#" class="btn-outline-custom" style="border-color: #25D366; color: #25D366;" onclick="event.preventDefault(); alert('Profile link copied to clipboard!');">
+            <i class="fas fa-share-alt"></i> Share Profile
+          </a>
+          <a href="#" class="btn-outline-custom" style="border-color: var(--navy); color: var(--navy);" onclick="event.preventDefault(); alert('vCard Downloaded to your device.');">
+            <i class="fas fa-address-card"></i> Save Contact
           </a>
         </div>
+
       </div>
     </div>
   </div>
@@ -1491,8 +1482,94 @@
           </ul>
         </div>
 
+
+        <div class="profile-content mt-5">
+          <h3>Awards & Publications</h3>
+          <div class="accordion mt-4" id="awardsAccordion">
+            <div class="accordion-item" style="border:1px solid var(--border); border-radius:12px; margin-bottom:15px; overflow:hidden;">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-family:'Outfit',sans-serif; font-weight:600; color:var(--navy); background:#f8fafc; font-size: 1.05rem;">
+                  <i class="fas fa-trophy me-2 text-teal"></i> National Healthcare Excellence Award (2023)
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#awardsAccordion">
+                <div class="accordion-body" style="color:var(--text-muted); font-size:0.95rem; line-height: 1.7; background: #fff;">
+                  Awarded the prestigious "Best Interventional Cardiologist" at the National Healthcare Summit 2023 for pioneering work in minimally invasive heart surgeries, achieving a 99% success rate across high-risk procedures.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item" style="border:1px solid var(--border); border-radius:12px; margin-bottom:15px; overflow:hidden;">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-family:'Outfit',sans-serif; font-weight:600; color:var(--navy); background:#f8fafc; font-size: 1.05rem;">
+                  <i class="fas fa-book-medical me-2 text-teal"></i> Over 50+ International Publications
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#awardsAccordion">
+                <div class="accordion-body" style="color:var(--text-muted); font-size:0.95rem; line-height: 1.7; background: #fff;">
+                  Authored and co-authored over 50 peer-reviewed articles in top medical journals including the Journal of the American College of Cardiology (JACC) and The Lancet. Keynote speaker at the Global Heart Forum.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item" style="border:1px solid var(--border); border-radius:12px; overflow:hidden;">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="font-family:'Outfit',sans-serif; font-weight:600; color:var(--navy); background:#f8fafc; font-size: 1.05rem;">
+                  <i class="fas fa-medal me-2 text-teal"></i> President's Medallion for Service
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#awardsAccordion">
+                <div class="accordion-body" style="color:var(--text-muted); font-size:0.95rem; line-height: 1.7; background: #fff;">
+                  Recognized for providing free life-saving surgeries to underprivileged children through the "Heal a Heart" foundation, performing over 500 charitable operations.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-content mt-5">
+          <div class="d-flex align-items-center justify-content-between mb-4" style="border-bottom: 3px solid var(--teal); padding-bottom: 12px; width: max-content;">
+             <h3 class="mb-0" style="padding-bottom: 0;">Verified Patient Reviews</h3>
+          </div>
+          
+          <div class="row g-4 mt-2">
+            <div class="col-md-6" data-aos="fade-up">
+              <div style="background:var(--grey); padding:30px; border-radius:16px; border:1px solid var(--border); height:100%; position:relative;">
+                <i class="fas fa-quote-right" style="position:absolute; top:20px; right:20px; color:rgba(2,132,199,0.1); font-size:3rem;"></i>
+                <div style="color:#F59E0B; font-size:1.1rem; margin-bottom:15px;">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p style="font-size:0.95rem; color:var(--text-muted); font-style:italic; line-height: 1.7;">"Dr. Verma is a true lifesaver. My father had a severe blockage, and Dr. Verma's swift action and calm demeanor during the angioplasty gave us so much hope. He explained everything beautifully. A true professional!"</p>
+                <div class="d-flex align-items-center mt-4">
+                  <div style="width:40px; height:40px; background:var(--teal); color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; margin-right:12px;">AD</div>
+                  <div>
+                    <h6 style="color:var(--navy); font-family:'Outfit',sans-serif; margin:0; font-size:1rem;">Amit Desai</h6>
+                    <span style="font-size:0.75rem; color:var(--text-muted); font-weight:600;"><i class="fas fa-check-circle text-success me-1"></i>Verified on Practo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div style="background:var(--grey); padding:30px; border-radius:16px; border:1px solid var(--border); height:100%; position:relative;">
+                <i class="fas fa-quote-right" style="position:absolute; top:20px; right:20px; color:rgba(2,132,199,0.1); font-size:3rem;"></i>
+                <div style="color:#F59E0B; font-size:1.1rem; margin-bottom:15px;">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p style="font-size:0.95rem; color:var(--text-muted); font-style:italic; line-height: 1.7;">"He listens patiently and never rushes the consultation. I've been consulting him for my hypertension for 3 years, and his advice is always spot on. I feel completely secure in his care. Highly recommended."</p>
+                <div class="d-flex align-items-center mt-4">
+                  <div style="width:40px; height:40px; background:var(--navy); color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; margin-right:12px;">SR</div>
+                  <div>
+                    <h6 style="color:var(--navy); font-family:'Outfit',sans-serif; margin:0; font-size:1rem;">Sunita R.</h6>
+                    <span style="font-size:0.75rem; color:var(--text-muted); font-weight:600;"><i class="fab fa-google text-danger me-1"></i>Google Reviews</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      
+
       <!-- Sidebar Schedule -->
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
         <div class="schedule-card">
@@ -1562,6 +1639,9 @@
           <ul class="footer-links">
             <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
             <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="facilities.html"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+            <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+            <li><a href="careers.html"><i class="fas fa-chevron-right"></i> Careers</a></li>
             <li><a href="doctors.html"><i class="fas fa-chevron-right"></i> Our Doctors</a></li>
             <li><a href="departments.html"><i class="fas fa-chevron-right"></i> Departments</a></li>
             <li><a href="appointment.html"><i class="fas fa-chevron-right"></i> Book Appointment</a></li>
@@ -1718,41 +1798,11 @@
     });
   </script>
 
-<!-- ─── WHATSAPP FLOATING BUTTON ─── -->
-<a href="https://wa.me/918879307930?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20White%20Lotus%20Hospital%20services."
-   id="wa-btn" target="_blank" rel="noopener"
-   title="Chat with us on WhatsApp"
-   style="position:fixed;bottom:28px;left:28px;z-index:9998;
-          width:58px;height:58px;border-radius:50%;
-          background:#25D366;color:#fff;
-          display:flex;align-items:center;justify-content:center;
-          font-size:1.6rem;
-          box-shadow:0 6px 24px rgba(37,211,102,.5);
-          transition:all .3s;text-decoration:none;"
-   onmouseover="this.style.transform='scale(1.12)';this.style.boxShadow='0 10px 32px rgba(37,211,102,.65)'"
-   onmouseout="this.style.transform='';this.style.boxShadow='0 6px 24px rgba(37,211,102,.5)'">
-  <i class="fab fa-whatsapp"></i>
-</a>
 
-<!-- ─── STICKY MOBILE EMERGENCY BAR ─── -->
-<div id="mob-emergency"
-     style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9997;
-            background:#dc2626;padding:10px 16px;
-            align-items:center;justify-content:space-between;gap:8px;">
-  <span style="color:#fff;font-size:.82rem;font-weight:600;"><i class="fas fa-ambulance" style="margin-right:6px;"></i>24/7 Emergency</span>
-  <a href="tel:18003138990"
-     style="background:#fff;color:#dc2626;padding:7px 18px;border-radius:50px;
-            font-family:'Outfit',sans-serif;font-weight:700;font-size:.85rem;white-space:nowrap;text-decoration:none;">
-     Call 1800 313 8990
-  </a>
-</div>
+
+
 <style>
-  @media(max-width:767px){
-    #mob-emergency{display:flex!important;}
-    body{padding-bottom:54px;}
-    #wa-btn{bottom:78px;}
-    #scrollTop{bottom:80px;}
-  }
+  
 
 /* --- ULTIMATE MOBILE RESPONSIVENESS PATCH --- */
 @media (max-width: 991px) {
@@ -2336,5 +2386,129 @@ body {
   }
 }
 </style>
+
+<!-- ============================================
+     PREMIUM FEATURES: WHATSAPP, EMERGENCY BAR, QUICK BOOK, SMOOTH SCROLL
+     ============================================ -->
+<style>
+  /* 1. Smooth Transitions */
+  body { animation: fadeInPage 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+  @keyframes fadeInPage { from { opacity: 0; } to { opacity: 1; } }
+  .fade-out-page { opacity: 0 !important; transition: opacity 0.35s ease; }
+  
+  /* 2. Mobile Emergency Bar */
+  .mobile-emergency-bar { 
+    display: none; position: fixed; top: 0; left: 0; width: 100%; 
+    background: #ef4444; color: white; text-align: center; padding: 12px 15px; 
+    font-size: 1.05rem; font-weight: 700; z-index: 99999; 
+    box-shadow: 0 4px 15px rgba(239,68,68,0.4); text-decoration: none; 
+    font-family: 'Outfit', sans-serif; letter-spacing: 1px;
+  }
+  .mobile-emergency-bar i { margin-right: 8px; }
+  @media (max-width: 767px) { 
+    .mobile-emergency-bar { display: flex; justify-content: center; align-items: center; } 
+    #header { top: 48px !important; } /* Push header down */
+    body { padding-top: 48px; }
+  }
+  
+  /* 3. Floating WhatsApp */
+  .wa-float { 
+    position: fixed; bottom: 90px; right: 20px; width: 60px; height: 60px; 
+    background: #25D366; color: #FFF; border-radius: 50px; text-align: center; 
+    font-size: 34px; box-shadow: 0 6px 15px rgba(37,211,102,0.4); z-index: 9998; 
+    display: flex; align-items: center; justify-content: center; text-decoration: none; 
+    transition: transform 0.3s; animation: pulse-wa 2s infinite; 
+  }
+  .wa-float:hover { transform: scale(1.1); color: #fff; }
+  @keyframes pulse-wa { 
+    0% { box-shadow: 0 0 0 0 rgba(37,211,102, 0.7); } 
+    70% { box-shadow: 0 0 0 15px rgba(37,211,102, 0); } 
+    100% { box-shadow: 0 0 0 0 rgba(37,211,102, 0); } 
+  }
+  @media (max-width: 767px) { 
+    .wa-float { bottom: 70px; right: 15px; width: 50px; height: 50px; font-size: 28px; } 
+  }
+</style>
+
+<!-- Mobile Emergency Bar -->
+<a href="tel:1066" class="mobile-emergency-bar">
+  <i class="fas fa-ambulance fa-pulse"></i> CALL AMBULANCE: 1066
+</a>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/918879307930" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Quick Book Modal -->
+<div class="modal fade" id="quickBookModal" tabindex="-1" aria-labelledby="quickBookModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="border-radius: 20px; border: none; box-shadow: 0 20px 50px rgba(0,0,0,0.25);">
+      <div class="modal-header" style="background: var(--navy); color: white; border-radius: 20px 20px 0 0; border-bottom: none; padding: 24px 30px;">
+        <h5 class="modal-title" id="quickBookModalLabel" style="font-family: 'Outfit', sans-serif; font-weight: 700; font-size:1.4rem;">
+          <i class="fas fa-calendar-check me-2" style="color: var(--teal);"></i> Instant Appointment
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="padding: 30px;">
+        <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:20px;">Skip the queue. Book your consultation instantly and our triage team will call you back within 5 minutes.</p>
+        <form id="quickBookForm">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Patient Full Name" required style="padding: 14px; border-radius: 10px; background:var(--grey); border:1px solid var(--border);">
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="Mobile Number" required style="padding: 14px; border-radius: 10px; background:var(--grey); border:1px solid var(--border);">
+          </div>
+          <div class="mb-4">
+            <select class="form-select" style="padding: 14px; border-radius: 10px; background:var(--grey); border:1px solid var(--border);">
+              <option selected disabled>Select Department / Specialist</option>
+              <option>Cardiology (Heart)</option>
+              <option>Neurology (Brain/Nerves)</option>
+              <option>Orthopaedics (Bone/Joints)</option>
+              <option>Paediatrics (Child Care)</option>
+              <option>Gynaecology (Women's Health)</option>
+              <option>General Physician</option>
+            </select>
+          </div>
+          <button type="button" class="btn-primary-custom w-100 justify-content-center py-3" onclick="alert('Appointment Request Sent Successfully! Our team will contact you momentarily.'); document.querySelector('#quickBookModal .btn-close').click();" style="border-radius: 10px; font-size:1.05rem;">Confirm Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Smooth Page Transitions
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[href]').forEach(a => {
+      if(a.hostname === window.location.hostname && 
+         !a.hash && 
+         a.target !== '_blank' && 
+         !a.hasAttribute('data-bs-toggle') && 
+         !a.href.includes('javascript') && 
+         !a.href.includes('mailto') && 
+         !a.href.includes('tel')) {
+        
+        a.addEventListener('click', e => {
+          e.preventDefault();
+          document.body.classList.add('fade-out-page');
+          setTimeout(() => { window.location = a.href; }, 350);
+        });
+      }
+    });
+    
+    // Auto-upgrade all "Book Appointment" links to open the Instant Modal instead
+    document.querySelectorAll('a[href="appointment.html"]').forEach(btn => {
+      // Exclude footer links or breadcrumbs if needed, but upgrading all usually works great
+      if(!btn.closest('.wl-breadcrumb') && !btn.closest('.footer-links')) {
+          btn.setAttribute('data-bs-toggle', 'modal');
+          btn.setAttribute('data-bs-target', '#quickBookModal');
+          btn.href = "#";
+      }
+    });
+  });
+</script>
+<!-- ================= END PREMIUM FEATURES ================= -->
+
 </body>
 </html>
